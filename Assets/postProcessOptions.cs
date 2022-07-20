@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.UI;
 public class postProcessOptions : MonoBehaviour
 {
     private PostProcessVolume _postProcessVolume;
     private ColorGrading _postGrading;
-    public float Value = 0f;
+    public Slider _sliderValue;
     private void Start()
     {
         _postProcessVolume = GetComponent<PostProcessVolume>();
@@ -16,6 +17,6 @@ public class postProcessOptions : MonoBehaviour
 
     private void Update()
     {
-        _postGrading.hueShift.value = Value;
+        _postGrading.hueShift.value = _sliderValue.value;
     }
 }
