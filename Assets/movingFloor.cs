@@ -9,7 +9,7 @@ public class movingFloor : MonoBehaviour
     public Toggle floorSwitch;
     public movingWalls wallsSpeed;
     public Slider Speed;
-    private float BreakPoint = 0.565f;
+    private float BreakPoint = 0.565f+0.022f;
     public bool SinhronizeWalls;
     public MeshRenderer MeshRenderer;
 
@@ -23,7 +23,7 @@ public class movingFloor : MonoBehaviour
 
         if (_floorPos.transform.position.z > BreakPoint || _floorPos.transform.position.z < -BreakPoint)
         {
-            _floorPos.transform.position = new Vector3(-0.5f,0,0);
+            _floorPos.transform.position = new Vector3(-0.5f,0,0.022f);
         }
         _floorPos.transform.position += new Vector3(0f,0f,Speed.value*0.0001f);
 

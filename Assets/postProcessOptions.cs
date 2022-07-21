@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
+using System;
 public class postProcessOptions : MonoBehaviour
 {
     //Control panel//-------------------------------
-    public Slider sliderHueValue, sliderLensValue;
-    public Toggle gradientSwitch,bloomSwitch,neonSwitch,blurSwitch;
+    public Slider sliderHueValue, sliderLensValue, movingWalls,rotationValue,vievValue;
+    public Toggle gradientSwitch,bloomSwitch,neonSwitch,blurSwitch, floorSwitch;
     //----------------------------------------------
 
     //Initialize avalible options//-----------------
@@ -43,5 +44,19 @@ public class postProcessOptions : MonoBehaviour
         _lensDistortion.intensity.value = sliderLensValue.value;
         _vignette.active = gradientSwitch.isOn;
         //-------------------------------------------------------
+    }
+
+    public void RandomOptions()
+    {
+        bloomSwitch.isOn = Convert.ToBoolean(UnityEngine.Random.Range(0,2));
+        neonSwitch.isOn = Convert.ToBoolean(UnityEngine.Random.Range(0,2));
+        blurSwitch.isOn = Convert.ToBoolean(UnityEngine.Random.Range(0,2));
+        sliderHueValue.value = UnityEngine.Random.Range(-180,180);
+        sliderLensValue.value = UnityEngine.Random.Range(-100,0);
+        gradientSwitch.isOn = Convert.ToBoolean(UnityEngine.Random.Range(0,2));
+        movingWalls.value = UnityEngine.Random.Range(-25.0f,25.0f);
+        floorSwitch.isOn = Convert.ToBoolean(UnityEngine.Random.Range(0,2));
+        rotationValue.value = UnityEngine.Random.Range(0f,361f);
+        vievValue.value = UnityEngine.Random.Range(40f,120f);
     }
 }
