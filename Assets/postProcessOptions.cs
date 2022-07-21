@@ -57,6 +57,6 @@ public class postProcessOptions : MonoBehaviour
         movingWalls.value = UnityEngine.Random.Range(-25.0f,25.0f);
         floorSwitch.isOn = Convert.ToBoolean(UnityEngine.Random.Range(0,2));
         rotationValue.value = UnityEngine.Random.Range(0f,361f);
-        vievValue.value = UnityEngine.Random.Range(40f,120f);
+        vievValue.value = UnityEngine.Random.Range(40f,90f);
     }
 }
