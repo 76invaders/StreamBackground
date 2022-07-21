@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -21,19 +21,19 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 1, g: 0.88550174, b: 0, a: 1}
+    value: {r: 0.14456296, g: 1, b: 0, a: 1}
   center:
     overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.58
+    value: 0.508
   smoothness:
     overrideState: 1
-    value: 0.64
+    value: 0.556
   roundness:
     overrideState: 1
-    value: 0.79
+    value: 0.826
   rounded:
     overrideState: 0
     value: 0
@@ -56,13 +56,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
   m_Name: LensDistortion
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   intensity:
     overrideState: 1
-    value: -100
+    value: 0
   intensityX:
     overrideState: 0
     value: 1
@@ -93,7 +93,6 @@ MonoBehaviour:
   settings:
   - {fileID: 4652366305943341155}
   - {fileID: 7238822528028917428}
-  - {fileID: 7740104916557205166}
   - {fileID: 8317918221197862892}
   - {fileID: 1674757792827007146}
   - {fileID: -3232304949131865742}
@@ -160,7 +159,7 @@ MonoBehaviour:
     value: {r: 0, g: 1, b: 0.22198558, a: 1}
   hueShift:
     overrideState: 1
-    value: 112
+    value: 180
   saturation:
     overrideState: 1
     value: 100
@@ -1421,28 +1420,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
   intensity:
     overrideState: 1
-    value: 0.67
+    value: 2.09
   threshold:
-    overrideState: 1
-    value: 0.7
-  softKnee:
     overrideState: 0
-    value: 0.572
+    value: 4.8
+  softKnee:
+    overrideState: 1
+    value: 1
   clamp:
     overrideState: 0
     value: 65472
   diffusion:
-    overrideState: 0
-    value: 7
+    overrideState: 1
+    value: 3.32
   anamorphicRatio:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -0.67
   color:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -1468,7 +1467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
   m_Name: AutoExposure
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -1477,7 +1476,7 @@ MonoBehaviour:
     value: {x: 53.999943, y: 99}
   minLuminance:
     overrideState: 1
-    value: -3.8
+    value: -3.4
   maxLuminance:
     overrideState: 0
     value: 9
@@ -1493,55 +1492,6 @@ MonoBehaviour:
   speedDown:
     overrideState: 0
     value: 1
---- !u!114 &7740104916557205166
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1cb7e9e120078f43bce4f0b1be547a7, type: 3}
-  m_Name: AmbientOcclusion
-  m_EditorClassIdentifier: 
-  active: 0
-  enabled:
-    overrideState: 1
-    value: 1
-  mode:
-    overrideState: 0
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 0.97
-  color:
-    overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
-  ambientOnly:
-    overrideState: 0
-    value: 0
-  noiseFilterTolerance:
-    overrideState: 0
-    value: 0
-  blurTolerance:
-    overrideState: 0
-    value: -4.6
-  upsampleTolerance:
-    overrideState: 0
-    value: -12
-  thicknessModifier:
-    overrideState: 1
-    value: 1
-  directLightingStrength:
-    overrideState: 0
-    value: 0
-  radius:
-    overrideState: 0
-    value: 0.25
-  quality:
-    overrideState: 0
-    value: 2
 --- !u!114 &8317918221197862892
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1554,7 +1504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1

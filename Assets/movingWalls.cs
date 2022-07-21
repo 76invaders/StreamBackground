@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class movingWalls : MonoBehaviour
 {
     public Transform _wallsPos;
-    public int Speed;
+    public Slider Speed;
 
     private float BreakPoint = 0.565f;
 
@@ -16,6 +17,6 @@ public class movingWalls : MonoBehaviour
         {
             _wallsPos.transform.position = new Vector3(0,0,0);
         }
-        _wallsPos.transform.position += new Vector3(0f,Speed*0.0001f,0f);
+        _wallsPos.transform.position += new Vector3(0f,Speed.value*0.0001f,0f);
     }
 }
