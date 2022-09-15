@@ -1,2 +1,2 @@
 # matrixCubeUnity
- Project to create universal, cool background background
+ Project to create universal, cool background
